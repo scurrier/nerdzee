@@ -12,7 +12,7 @@ Top row items
 |Eights  |[1, 8, 3, 8, 2]|16    |
 
 Bottom row items
-|Scores for throws                   |
+!|Scores for throws                   |
 |score as     |roll           |score?|
 |ThreeOfAKind |[1, 2, 2, 3, 4]|0     |
 |ThreeOfAKind |[1, 8, 8, 7, 8]|32    |
