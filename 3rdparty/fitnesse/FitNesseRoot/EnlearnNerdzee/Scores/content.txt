@@ -1,0 +1,36 @@
+Top row items
+|Scores for throws                                                       |
+|score as|roll           |score?|#Description                            |
+|Ones    |[2, 2, 2, 2, 2]|0     |Score zero if there are no matching dice|
+|Ones    |[1, 1, 2, 2, 2]|2     |Total ones                              |
+|Twos    |[1, 1, 2, 2, 2]|6     |Total of the twos                       |
+|Threes  |[1, 3, 3, 3, 2]|9     |Total of the threes                     |
+|Fours   |[4, 4, 4, 4, 4]|20    |Total of the fours                      |
+|Fives   |[5, 3, 3, 3, 5]|10    |Total of the fives                      |
+|Sixes   |[6, 3, 6, 6, 2]|18    |Total of the sixes                      |
+|Sevens  |[1, 3, 7, 3, 7]|14    |Total of the sevens                     |
+|Eights  |[1, 8, 3, 8, 2]|16    |Total of the eights                     |
+
+Bottom row items
+!|Scores for throws                                                                  |
+|score as     |roll           |score?|#Description                                   |
+|ThreeOfAKind |[1, 2, 2, 3, 4]|0     |zero if there is not at least three of a kind  |
+|ThreeOfAKind |[1, 8, 8, 7, 8]|32    |sum of all dice                                |
+|ThreeOfAKind |[1, 1, 1, 1, 1]|5     |sum of all dice                                |
+|FourOfAKind  |[8, 8, 8, 7, 7]|0     |zero if there is not at least four of a kind   |
+|FourOfAKind  |[7, 7, 6, 7, 7]|34    |sum of all dice                                |
+|AllOfAKind   |[8, 8, 8, 7, 8]|0     |zero if all dice are not the same              |
+|AllOfAKind   |[8, 8, 8, 8, 8]|50    |50 points                                      |
+|NoneOfAKind  |[8, 7, 7, 3, 2]|0     |zero if there is duplicate dice                |
+|NoneOfAKind  |[8, 7, 6, 3, 2]|40    |40 points                                      |
+|FullHouse    |[3, 3, 4, 4, 5]|0     |zero if there is no full house                 |
+|FullHouse    |[3, 3, 4, 4, 4]|25    |25 points for a full house                     |
+|FullHouse    |[3, 3, 4, 4, 3]|25    |                                               |
+|SmallStraight|[5, 3, 2, 1, 5]|0     |zero if there is not a small straight or better|
+|SmallStraight|[4, 3, 2, 1, 8]|30    |30 points                                      |
+|SmallStraight|[4, 3, 2, 5, 3]|30    |works with dupe values                         |
+|SmallStraight|[6, 4, 5, 8, 7]|30    |can score for large straight too               |
+|LargeStraight|[6, 4, 5, 3, 1]|0     |zero if no large straight                      |
+|LargeStraight|[6, 4, 5, 3, 7]|40    |40 point if there is a large straight          |
+|Chance       |[1, 2, 1, 5, 8]|17    |sum of all dice                                |
+|Chance       |[8, 8, 8, 8, 8]|40    |still sum of all dice                          |
