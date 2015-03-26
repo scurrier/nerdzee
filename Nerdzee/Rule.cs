@@ -9,5 +9,10 @@ namespace Nerdzee
     public class Rule
     {
         public static Rule Ones;
+
+        public static Rule Create(string name)
+        {
+            return Ones;
+        }
     }
 }
