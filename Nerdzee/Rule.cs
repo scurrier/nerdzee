@@ -10,21 +10,29 @@ namespace Nerdzee
     {
         public static Rule Ones = new Rule(1);
         public static Rule Twos = new Rule(2);
-        private int pips;
+        public int Pips {get; private set;}
 
         public Rule(int value)
         {
-            pips = value;
+            Pips = value;
         }
 
         public int Score(int[] rolls)
         {
-            return rolls.Count(a => a == pips) * pips;
+            return rolls.Count(a => a == Pips) * Pips;
         }
 
         public static Rule Create(string name)
         {
-            return Ones;
+            switch (name)
+            {
+                case "Ones":
+                    return Ones;
+                case "Twos":
+                    return Twos;
+                default:
+                    throw new ArgumentException("ArgueMints: " + name);
+            }
         }
     }
 }

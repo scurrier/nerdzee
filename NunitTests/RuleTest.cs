@@ -25,5 +25,13 @@ namespace NunitTests
             var testObj = new Rule(2);
             Assert.AreEqual(2, testObj.Score(new[] { 2, 3, 4, 5, 6 }));
         }
+
+        [Test]
+        public void Create()
+        {
+            Assert.Throws<ArgumentException>(() => Rule.Create("NegativeTwenties"));
+            Assert.That(Rule.Create("Ones").Pips, Is.EqualTo(1));
+            Assert.That(Rule.Create("Twos").Pips, Is.EqualTo(2));
+        }
     }
 }
