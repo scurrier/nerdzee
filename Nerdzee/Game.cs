@@ -10,7 +10,7 @@ namespace Nerdzee
     {
         public int Score(Rule rule, int[] p)
         {
-            return 0;
+            return p.Count(a => a == 1);
         }
     }
 }
