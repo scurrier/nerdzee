@@ -17,7 +17,7 @@ namespace NunitTests
         [Test]
         public void Ones()
         {
-            var testObj = new Nerdzee.Game();
+            var testObj = new Game();
             Assert.AreEqual(0, testObj.Score(Rule.Ones, new []{2,3,4,5,6}));
         }
     }
