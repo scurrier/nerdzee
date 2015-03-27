@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nerdzee
 {
-    public class TopSectionRule : Nerdzee.IRule
+    public class TopSectionRule : Nerdzee.Rule
     {
         public int Pips {get; private set;}
 

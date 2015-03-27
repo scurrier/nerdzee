@@ -22,6 +22,6 @@ using Nerdzee;
         public int score()
         {
             var game = new Game();
-            return game.Score(IRule.Create(name), roll);
+            return game.Score(Rule.Create(name), roll);
         }
     }

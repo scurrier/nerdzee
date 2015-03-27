@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Nerdzee
 {
-    public abstract class IRule
+    public abstract class Rule
     {
         public static TopSectionRule Ones = new TopSectionRule(1);
         public static TopSectionRule Twos = new TopSectionRule(2);
@@ -9,7 +9,7 @@ namespace Nerdzee
 
         public abstract int Score(int[] rolls);
 
-        public static IRule Create(string name)
+        public static Rule Create(string name)
         {
             switch (name)
             {

@@ -37,9 +37,9 @@ namespace NunitTests
         public void Create()
         {
             Assert.Throws<ArgumentException>(() => TopSectionRule.Create("NegativeTwenties"));
-            Assert.That(((TopSectionRule)IRule.Create("Ones")).Pips, Is.EqualTo(1));
-            Assert.That(((TopSectionRule)IRule.Create("Twos")).Pips, Is.EqualTo(2));
-            Assert.That(((TopSectionRule)IRule.Create("Threes")).Pips, Is.EqualTo(3));
+            Assert.That(((TopSectionRule)Rule.Create("Ones")).Pips, Is.EqualTo(1));
+            Assert.That(((TopSectionRule)Rule.Create("Twos")).Pips, Is.EqualTo(2));
+            Assert.That(((TopSectionRule)Rule.Create("Threes")).Pips, Is.EqualTo(3));
         }
     }
 }
