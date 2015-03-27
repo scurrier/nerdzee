@@ -10,6 +10,7 @@ namespace Nerdzee
     {
         public static Rule Ones = new Rule(1);
         public static Rule Twos = new Rule(2);
+        public static Rule Threes = new Rule(3);
         public int Pips {get; private set;}
 
         public Rule(int value)
@@ -30,6 +31,8 @@ namespace Nerdzee
                     return Ones;
                 case "Twos":
                     return Twos;
+                case "Threes":
+                    return Threes;
                 default:
                     throw new ArgumentException("ArgueMints: " + name);
             }
