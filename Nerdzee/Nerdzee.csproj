@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SmallStraightRule.cs" />
     <Compile Include="Rule.cs" />
     <Compile Include="LargeStraightRule.cs" />
     <Compile Include="TopSectionRule.cs" />

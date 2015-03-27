@@ -30,10 +30,5 @@ namespace NunitTests
             var testObj = new LargeStraightRule();
             Assert.AreEqual(0, testObj.Score(new[] { 1, 2, 4, 5, 6 }));
         }
-
-        [Test]
-        public void Create()
-        {
-        }
     }
 }

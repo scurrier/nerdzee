@@ -43,6 +43,7 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SmallStraightRuleTest.cs" />
     <Compile Include="LargeStraightRuleTest.cs" />
     <Compile Include="RuleTest.cs" />
     <Compile Include="TopSectionRuleTest.cs" />
