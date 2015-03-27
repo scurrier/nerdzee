@@ -32,14 +32,5 @@ namespace NunitTests
             var testObj = new TopSectionRule(3);
             Assert.AreEqual(3, testObj.Score(new[] { 2, 3, 4, 5, 6 }));
         }
-
-        [Test]
-        public void Create()
-        {
-            Assert.Throws<ArgumentException>(() => TopSectionRule.Create("NegativeTwenties"));
-            Assert.That(((TopSectionRule)Rule.Create("Ones")).Pips, Is.EqualTo(1));
-            Assert.That(((TopSectionRule)Rule.Create("Twos")).Pips, Is.EqualTo(2));
-            Assert.That(((TopSectionRule)Rule.Create("Threes")).Pips, Is.EqualTo(3));
-        }
     }
 }
