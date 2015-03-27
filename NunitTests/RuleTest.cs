@@ -17,8 +17,17 @@ namespace NunitTests
             Assert.That(((TopSectionRule)Rule.Create("Ones")).Pips, Is.EqualTo(1));
             Assert.That(((TopSectionRule)Rule.Create("Twos")).Pips, Is.EqualTo(2));
             Assert.That(((TopSectionRule)Rule.Create("Threes")).Pips, Is.EqualTo(3));
-            Assert.That(Rule.Create("LargeStraight"), Is.TypeOf<LargeStraightRule>());
-            Assert.That(Rule.Create("SmallStraight"), Is.TypeOf<SmallStraightRule>());
+            Assert.That(Rule.Create("LargeStraight"), Is.TypeOf<StraightRule>());
+            Assert.That(Rule.Create("SmallStraight"), Is.TypeOf<StraightRule>());
+
+            StraightRule largeStraight = Rule.Create("LargeStraight") as StraightRule;
+            Assert.That(largeStraight.Length, Is.EqualTo(5));
+            Assert.That(largeStraight.ScoreValue, Is.EqualTo(40));
+
+            StraightRule smallStraight = Rule.Create("SmallStraight") as StraightRule;
+            Assert.That(smallStraight.Length, Is.EqualTo(4));
+            Assert.That(smallStraight.ScoreValue, Is.EqualTo(30));
+
         }
     }
 }

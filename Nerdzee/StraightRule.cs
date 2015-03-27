@@ -6,12 +6,23 @@ using System.Threading.Tasks;
 
 namespace Nerdzee
 {
-    public class SmallStraightRule : Rule
+    public class StraightRule : Rule
     {
         private int length;
+
+        public int Length
+        {
+            get { return length; }
+        }
+
         private int score;
 
-        public SmallStraightRule(int length, int score)
+        public int ScoreValue
+        {
+            get { return score; }
+        }
+
+        public StraightRule(int length, int score)
         {
             this.length = length;
             this.score = score;
