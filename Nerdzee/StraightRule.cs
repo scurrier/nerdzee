@@ -8,24 +8,13 @@ namespace Nerdzee
 {
     public class StraightRule : Rule
     {
-        private int length;
-
-        public int Length
-        {
-            get { return length; }
-        }
-
-        private int score;
-
-        public int ScoreValue
-        {
-            get { return score; }
-        }
+        public int Length { get; private set; }
+        public int ScoreValue { get; private set; }
 
         public StraightRule(int length, int score)
         {
-            this.length = length;
-            this.score = score;
+            Length = length;
+            ScoreValue = score;
         }
 
         public override int Score(int[] rolls)
@@ -39,8 +28,8 @@ namespace Nerdzee
                     countStraight = 1;
                 else
                     countStraight++;
-                if (countStraight >= length)
-                    return score;
+                if (countStraight >= Length)
+                    return ScoreValue;
             }
             return 0;
         }
