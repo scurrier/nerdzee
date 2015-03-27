@@ -8,8 +8,13 @@ namespace Nerdzee
 {
     public class SmallStraightRule : Rule
     {
-        public SmallStraightRule()
+        private int length;
+        private int score;
+
+        public SmallStraightRule(int length, int score)
         {
+            this.length = length;
+            this.score = score;
         }
 
         public override int Score(int[] rolls)
@@ -23,8 +28,8 @@ namespace Nerdzee
                     countStraight = 1;
                 else
                     countStraight++;
-                if (countStraight >= 4)
-                    return 30;
+                if (countStraight >= length)
+                    return score;
             }
             return 0;
         }

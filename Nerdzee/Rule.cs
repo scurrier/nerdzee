@@ -7,7 +7,7 @@ namespace Nerdzee
         public static TopSectionRule Twos = new TopSectionRule(2);
         public static TopSectionRule Threes = new TopSectionRule(3);
         public static LargeStraightRule LargeStraight = new LargeStraightRule();
-        public static SmallStraightRule SmallStraight = new SmallStraightRule();
+        public static SmallStraightRule SmallStraight = new SmallStraightRule(4, 30);
 
         public abstract int Score(int[] rolls);
 

@@ -14,7 +14,7 @@ namespace NunitTests
         [SetUp]
         public void SetUp()
         {
-            testObj = new SmallStraightRule();
+            testObj = new SmallStraightRule(4, 30);
         }
 
         [Test]
