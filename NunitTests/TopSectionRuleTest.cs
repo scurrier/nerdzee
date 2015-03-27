@@ -8,7 +8,7 @@ using Nerdzee;
 namespace NunitTests
 {
     [TestFixture]
-    public class RuleTest
+    public class TopSectionRuleTest
     {
         [Test]
         public void ScoreOnes()
