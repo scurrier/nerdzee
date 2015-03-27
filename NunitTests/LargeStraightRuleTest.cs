@@ -14,14 +14,14 @@ namespace NunitTests
         public void ScoreLargeStraight()
         {
             var testObj = new LargeStraightRule();
-            Assert.AreEqual(30, testObj.Score(new[] { 2, 3, 4, 5, 6 }));
+            Assert.AreEqual(40, testObj.Score(new[] { 2, 3, 4, 5, 6 }));
         }
 
         [Test]
         public void ScoreUnsortedLargeStraight()
         {
             var testObj = new LargeStraightRule();
-            Assert.AreEqual(30, testObj.Score(new[] { 2, 4, 3, 5, 6 }));
+            Assert.AreEqual(40, testObj.Score(new[] { 2, 4, 3, 5, 6 }));
         }
 
         [Test]

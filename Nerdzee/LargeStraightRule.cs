@@ -20,7 +20,7 @@ namespace Nerdzee
                 if (rolls[index] + 1 != rolls[index + 1])
                     return 0;
             }
-            return 30;
+            return 40;
         }
     }
 }
