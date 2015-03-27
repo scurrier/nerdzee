@@ -1,5 +1,5 @@
-!|Suggested scores    |
-|roll     |suggestion?|
-|5,5,5,5,5|AllOfAKind |
-|4,5,6,7,8|LargeStraight|
-|3,3,8,8,8|ThreeOfAKind,Chance|
+!|Suggested scores                     |
+|Roll           |suggestion?           |
+|[5, 5, 5, 5, 5]|[AllOfAKind]          |
+|[4, 5, 6, 7, 8]|[LargeStraight]       |
+|[3, 3, 8, 8, 8]|[ThreeOfAKind, Chance]|
