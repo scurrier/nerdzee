@@ -8,7 +8,7 @@ namespace Nerdzee
 {
     public class Game
     {
-        public int Score(Rule rule, int[] p)
+        public int Score(IRule rule, int[] p)
         {
             return rule.Score(p);
         }
