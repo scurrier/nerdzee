@@ -15,12 +15,19 @@ namespace Nerdzee
         public override int Score(int[] rolls)
         {
             Array.Sort(rolls);
+            int countStraight = 1;
+            int maxStraight = countStraight;
             for (int index = 0; index < rolls.Length - 1; index++ )
             {
                 if (rolls[index] + 1 != rolls[index + 1])
-                    return 0;
+                    countStraight = 0;
+                countStraight++;
+                if (countStraight > maxStraight)
+                    maxStraight = countStraight;
             }
-            return 30;
+            if(maxStraight >= 4)
+                return 30;
+            return 0;
         }
     }
 }
