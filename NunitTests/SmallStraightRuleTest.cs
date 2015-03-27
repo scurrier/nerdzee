@@ -51,5 +51,12 @@ namespace NunitTests
             var testObj = new SmallStraightRule();
             Assert.AreEqual(0, testObj.Score(new[] { 1, 3, 5, 2, 7 }));
         }
+
+        [Test]
+        public void ScoreSmallStraightWithDuplicates()
+        {
+            var testObj = new SmallStraightRule();
+            Assert.AreEqual(30, testObj.Score(new[] { 1, 3, 3, 2, 4 }));
+        }
     }
 }

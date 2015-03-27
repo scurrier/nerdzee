@@ -19,6 +19,8 @@ namespace Nerdzee
             int maxStraight = countStraight;
             for (int index = 0; index < rolls.Length - 1; index++ )
             {
+                if (rolls[index] == rolls[index + 1])
+                    continue;
                 if (rolls[index] + 1 != rolls[index + 1])
                     countStraight = 0;
                 countStraight++;
