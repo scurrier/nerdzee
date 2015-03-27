@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Nerdzee
 {
-    public class LargeStraightRule
+    public class LargeStraightRule : Rule
     {
         public LargeStraightRule()
         {
         }
 
-        public int Score(int[] rolls)
+        public override int Score(int[] rolls)
         {
             Array.Sort(rolls);
             for (int index = 0; index < rolls.Length - 1; index++ )

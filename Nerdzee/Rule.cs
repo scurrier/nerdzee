@@ -6,6 +6,7 @@ namespace Nerdzee
         public static TopSectionRule Ones = new TopSectionRule(1);
         public static TopSectionRule Twos = new TopSectionRule(2);
         public static TopSectionRule Threes = new TopSectionRule(3);
+        public static LargeStraightRule LargeStraight = new LargeStraightRule();
 
         public abstract int Score(int[] rolls);
 
@@ -19,6 +20,8 @@ namespace Nerdzee
                     return Twos;
                 case "Threes":
                     return Threes;
+                case "LargeStraight":
+                    return LargeStraight;
                 default:
                     throw new ArgumentException("ArgueMints: " + name);
             }

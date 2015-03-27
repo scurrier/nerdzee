@@ -17,6 +17,7 @@ namespace NunitTests
             Assert.That(((TopSectionRule)Rule.Create("Ones")).Pips, Is.EqualTo(1));
             Assert.That(((TopSectionRule)Rule.Create("Twos")).Pips, Is.EqualTo(2));
             Assert.That(((TopSectionRule)Rule.Create("Threes")).Pips, Is.EqualTo(3));
+            Assert.That(Rule.Create("LargeStraight"), Is.TypeOf<LargeStraightRule>());
         }
     }
 }
